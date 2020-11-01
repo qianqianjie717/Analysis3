@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE4E1"
+    android:padding="13dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/r1"
+        android:gravity="center"
+        android:text="成绩汇总"
+        android:textColor="#FAEBD7"
+        android:textSize="30sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="220dp"
+            android:layout_height="235dp"
+            android:layout_gravity="left"
+            android:src="@drawable/connect" />
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="220dp"
+            android:gravity="top"
+            android:textColor="#B22222"
+            android:textSize="35sp" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="175dp"
+            android:layout_height="81dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/c1"
+            android:text="查看详情"
+            android:textColor="#B22222"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/f" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:gravity="center_vertical"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=" 成绩:"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text=" 绩点:"
+            android:gravity="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/jd1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="单科评级:"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/Text"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/f" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:gravity="center_vertical"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text=" 成绩:"
+            android:gravity="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text=" 绩点:"
+            android:gravity="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/jd2"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=" 单科评级:"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/Text2"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/f" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:gravity="center_vertical"
+            android:textSize="22sp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text=" 成绩:"
+            android:gravity="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text=" 绩点:"
+            android:gravity="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/jd3"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=" 单科评级:"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/Text3"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/f" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@+id/imageView4"
+            android:gravity="center_vertical"
+            android:textSize="22sp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text=" 成绩:"
+            android:gravity="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text=" 绩点:"
+            android:gravity="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/jd4"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=" 单科评级:"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/Text4"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE4E1"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/w1"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="#FF4500"
+            android:text="总结"
+            android:gravity="center"
+            android:textColor="#FAEBD7"
+            android:textSize="40dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp" >
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:gravity="bottom"
+            android:text="每天进步一点点
+                                   只要朝着梦想
+                                   距离就不远"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="220dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/m" />
+
+    </RelativeLayout>
+</LinearLayout>
