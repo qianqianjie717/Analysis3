@@ -30,6 +30,7 @@ public class All extends AppCompatActivity {
         String STR2=Intent.getStringExtra("xf2");
         String STR3=Intent.getStringExtra("xf3");
         String STR4=Intent.getStringExtra("xf4");
+//      得到上一个活动的学科名称，成绩，学分
         TextView XK1=(TextView) findViewById(R.id.textView);
         TextView XK2=(TextView) findViewById(R.id.textView2);
         TextView XK3=(TextView) findViewById(R.id.textView3);
@@ -54,6 +55,7 @@ public class All extends AppCompatActivity {
         CJ2.setText(Str2);
         CJ3.setText(Str3);
         CJ4.setText(Str4);
+//      输出学科名称，成绩
         Intent intent=getIntent();
         Bundle bd=intent.getExtras();
         //数据类型转换
@@ -74,6 +76,7 @@ public class All extends AppCompatActivity {
         final double h;
         h=Integer.parseInt(STR4);
         final double Jd1,Jd2,Jd3,Jd4;
+        //判断绩点以及等级
         if(a>=90&&a<=100){
             Jd1=4.0;
             Spj.setText("A");
@@ -294,6 +297,7 @@ public class All extends AppCompatActivity {
             Spj4.setText("F");
             jd4.setText(""+Jd4);
         }
+        //计算总学分，综合成绩等
         Button button3=(Button) findViewById(R.id.button3);
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -311,6 +315,9 @@ public class All extends AppCompatActivity {
                 final double jiaquanpingjunfen=(a*e+b*f+c*g+d*h)/(e+f+g+h);
                 final String D=String.valueOf(jiaquanpingjunfen);
                 intent.putExtra("jqpjf",D);
+                final double fangcha=((a-zonghechengji)*(a-zonghechengji)+(b-zonghechengji)*(b-zonghechengji)+(c-zonghechengji)*(c-zonghechengji)+(d-zonghechengji)*(d-zonghechengji))/4;
+                final String E=String.valueOf(fangcha);
+                intent.putExtra("fc",E);
                 startActivity(intent);
 
             }

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -44,7 +45,8 @@ public class Loading extends AppCompatActivity {
                 String STR2=Edit2.getText().toString();
                 String STR3=Edit3.getText().toString();
                 String STR4=Edit4.getText().toString();
-                double a=Integer.parseInt(Str1);
+//                得到数据转化成浮点型，进行运算
+             /*  double a=Integer.parseInt(Str1);
                 double b=Integer.parseInt(Str2);
                 double c=Integer.parseInt(Str3);
                 double d=Integer.parseInt(Str4);
@@ -52,10 +54,16 @@ public class Loading extends AppCompatActivity {
                 double f=Integer.parseInt(STR2);
                 double g=Integer.parseInt(STR3);
                 double h=Integer.parseInt(STR4);
-                if(str.length()==0||str2.length()==0||str3.length()==0||str4.length()==0||Str1.length()==0||Str2.length()==0||Str3.length()==0||Str4.length()==0||STR1.length()==0||STR2.length()==0||STR3.length()==0||STR4.length()==0){
-                    Toast.makeText(Loading.this, "重新输入", Toast.LENGTH_LONG).show();
-                }
-                else if(a>100||b>100||c>100||d>100||e>100||f>100||g>100||h>100){
+//               判断输入条件*/
+              /*  if(str.length()==0||str2.length()==0||str3.length()==0||str4.length()==0||Str1.length()==0||Str2.length()==0||Str3.length()==0||Str4.length()==0||STR1.length()==0||STR2.length()==0||STR3.length()==0||STR4.length()==0){
+
+                }*/
+                if ((TextUtils.isEmpty(str))||(TextUtils.isEmpty(str2))||(TextUtils.isEmpty(str3))||(TextUtils.isEmpty(str4))||(TextUtils.isEmpty(Str1))||(TextUtils.isEmpty(Str2))||
+                        (TextUtils.isEmpty(Str2))||(TextUtils.isEmpty(Str3))||(TextUtils.isEmpty(Str3))||(TextUtils.isEmpty(Str4))||
+                        (TextUtils.isEmpty(STR1))||(TextUtils.isEmpty(STR2))||(TextUtils.isEmpty(STR3))||(TextUtils.isEmpty(STR4))) Toast.makeText(Loading.this, "重新输入", Toast.LENGTH_LONG).show();
+
+               else if(Double.parseDouble(Str1)>100||Double.parseDouble(Str2)>100||Double.parseDouble(Str3)>100||Double.parseDouble(Str4)>100||Double.parseDouble(STR1)
+                        >100||Double.parseDouble(STR2)>100||Double.parseDouble(STR3)>100||Double.parseDouble(STR4)>100){
                     Toast.makeText(Loading.this, "重新输入", Toast.LENGTH_LONG).show();
                 }
                 else{

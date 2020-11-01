@@ -24,20 +24,18 @@ public class Analysis extends AppCompatActivity {
         String str2=intent.getStringExtra("zhcj");
         String str3=intent.getStringExtra("jd");
         String str4=intent.getStringExtra("jqpjf");
-//        String str5=intent.getStringExtra("zhdj");
+        String str5=intent.getStringExtra("fc");
         java.text.DecimalFormat f=new java.text.DecimalFormat("#.##");
-     /*Zhcj.setText(f.format(str2));
-        Zxf.setText(str);
-        Jd.setText(str3);
-        Jqpjf.setText(str4);*/
         double a;
         a=Double.valueOf(str);
         final double b;
         b=Double.valueOf(str2);
-        double c;
+        final double c;
         c=Double.valueOf(str3);
-        double d;
+        final double d;
         d=Double.valueOf(str4);
+        final double e;
+        e=Double.valueOf(str5);
         Zhcj.setText(f.format(a));
         Zxf.setText(f.format(b));
         Jd.setText(f.format(c));
@@ -68,7 +66,9 @@ public class Analysis extends AppCompatActivity {
           @Override
           public void onClick(View v) {
               Intent intent1=new Intent(Analysis.this, Ending.class);
+              String n=String.valueOf(e);
               intent1.putExtra("M",Q);
+              intent1.putExtra("N",n);
               startActivity(intent1);
            }
         });
